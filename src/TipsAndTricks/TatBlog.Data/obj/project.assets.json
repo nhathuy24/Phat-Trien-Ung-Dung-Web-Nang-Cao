@@ -3240,8 +3240,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nhathuy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nhathuy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3252,12 +3251,8 @@
       "packagesPath": "C:\\Users\\nhathuy\\.nuget\\packages\\",
       "outputPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\nhathuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3312,7 +3307,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

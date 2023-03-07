@@ -49,32 +49,11 @@ namespace TatBlog.Data.Seeders
                 },
                 new()
                 {
-                    FullName = "Quang Van Suong",
-                    UrlSlug = "quang-van-suong",
-                    Email = "suong@motip.com",
-                    JoinedDate = new DateTime(2019, 5, 1)
+                    FullName = "Pham Hoang Nhat Huy",
+                    UrlSlug = "pham-hoang-nhat-huy",
+                    Email = "nhuey@motip.com",
+                    JoinedDate = new DateTime(2019, 2, 24)
                 },
-                new()
-                {
-                    FullName = "Tran Dinh Minh Nhat",
-                    UrlSlug = "tran-dinh-minh-nhat",
-                    Email = "nhat@motip.com",
-                    JoinedDate = new DateTime(2020, 12, 10)
-                },
-                new()
-                {
-                    FullName = "Dong Ngan Quynh",
-                    UrlSlug = "dong-ngan-quynh",
-                    Email = "ty3005@gmail.com",
-                    JoinedDate = new DateTime(2020, 5, 30)
-                },
-                new()
-                {
-                    FullName = "Thai Thanh Truc",
-                    UrlSlug = "thai-thanh-truc",
-                    Email = "truc@gmail.com",
-                    JoinedDate = new DateTime(2020, 7, 7)
-                }
             };
 
             _dbContext.Authors.AddRange(authors);
