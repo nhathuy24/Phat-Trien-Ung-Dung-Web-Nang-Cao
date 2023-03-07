@@ -16,11 +16,21 @@ namespace TatBlog.Data.Contexts
         public DbSet<Post> Posts { get; set; }
         public DbSet<Tag> Tags { get; set; }
 
+        public BlogDbContext()
+        {
+
+        }
+
+        public BlogDbContext(DbContextOptions<BlogDbContext> options)
+            :base(options)
+        {
+
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-9ALR3JVH;TrustServerCertificate=True;Database=TatBlog;
-                Trusted_Connection=True;MultipleActiveResultSets=true");
-            //Data Source=LAPTOP-9ALR3JVH;Initial Catalog=TatBlog;Integrated Security=True
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-9ALR3JVH;TrustServerCertificate=True;Database=TatBlog;Trusted_Connection=True;MultipleActiveResultSets=true");
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
