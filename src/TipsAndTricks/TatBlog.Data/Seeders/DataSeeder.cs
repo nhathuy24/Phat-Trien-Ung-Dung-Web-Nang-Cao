@@ -52,9 +52,29 @@ namespace TatBlog.Data.Seeders
                     FullName = "Pham Hoang Nhat Huy",
                     UrlSlug = "pham-hoang-nhat-huy",
                     Email = "nhuey@motip.com",
-                    JoinedDate = new DateTime(2019, 5, 1)
+                    JoinedDate = new DateTime(2019, 2, 24)
                 },
-                
+                new()
+                {
+                    FullName = "Ta Dinh Dinh",
+                    UrlSlug = "ta-dinh-dinh",
+                    Email = "dinh@motip.com",
+                    JoinedDate = new DateTime(2019, 6, 2)
+                },
+                new()
+                {
+                    FullName = "Pham Tuan Phi",
+                    UrlSlug = "pham-tuan-phi",
+                    Email = "tuanphi@motip.com",
+                    JoinedDate = new DateTime(2019, 8, 3)
+                },
+                 new()
+                 {
+                    FullName = "Pham Hoang Minh Anh",
+                    UrlSlug = "pham-hoang-minh-anh",
+                    Email = "minhanh@motip.com",
+                    JoinedDate = new DateTime(2019, 9, 4)
+                },
             };
 
             _dbContext.Authors.AddRange(authors);

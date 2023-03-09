@@ -1,15 +1,3 @@
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.deps.json
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.dll
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.pdb
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.csproj.AssemblyReference.cache
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.AssemblyInfoInputs.cache
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.AssemblyInfo.cs
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.csproj.CoreCompileInputs.cache
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.dll
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\refint\TatBlog.Core.dll
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\TatBlog.Core.pdb
-C:\Users\nhathuy\Downloads\New folder\2014483-Lab02-Homework\2014483-Lab02-Homework\TatBlog.Core\obj\Debug\net6.0\ref\TatBlog.Core.dll
 F:\Phat-Trien-Ung-Dung-Web-Nang-Cao\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.deps.json
 F:\Phat-Trien-Ung-Dung-Web-Nang-Cao\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.dll
 F:\Phat-Trien-Ung-Dung-Web-Nang-Cao\src\TipsAndTricks\TatBlog.Core\bin\Debug\net6.0\TatBlog.Core.pdb
