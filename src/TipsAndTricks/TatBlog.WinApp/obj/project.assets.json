@@ -3639,11 +3639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectUniqueName": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
       "projectName": "TatBlog.WinApp",
-      "projectPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectPath": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
       "packagesPath": "C:\\Users\\nhathuy\\.nuget\\packages\\",
-      "outputPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+      "outputPath": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.WinApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nhathuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3660,14 +3660,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-              "projectPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+            "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Core\\TatBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Core\\TatBlog.Core.csproj"
             },
-            "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-              "projectPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+            "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Data\\TatBlog.Data.csproj": {
+              "projectPath": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Data\\TatBlog.Data.csproj"
             },
-            "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-              "projectPath": "F:\\Phat-Trien-Ung-Dung-Web-Nang-Cao\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+            "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Services\\TatBlog.Services.csproj": {
+              "projectPath": "C:\\Users\\nhathuy\\Downloads\\2014483-Lab02-Practice\\2014483-Lab02-Practice\\TatBlog.Services\\TatBlog.Services.csproj"
             }
           }
         }

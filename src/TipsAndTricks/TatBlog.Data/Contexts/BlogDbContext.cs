@@ -31,6 +31,7 @@ namespace TatBlog.Data.Contexts
         {
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-9ALR3JVH;TrustServerCertificate=True;Database=TatBlog;
                 Trusted_Connection=True;MultipleActiveResultSets=true");
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

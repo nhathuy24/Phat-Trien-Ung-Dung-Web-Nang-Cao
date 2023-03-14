@@ -47,7 +47,7 @@ namespace TatBlog.Data.Seeders
                     Email = "jessica665@motip.com",
                     JoinedDate = new DateTime(2020, 4, 19)
                 },
-                new()
+                 new()
                 {
                     FullName = "Pham Hoang Nhat Huy",
                     UrlSlug = "pham-hoang-nhat-huy",
