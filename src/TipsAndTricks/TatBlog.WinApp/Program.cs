@@ -11,6 +11,7 @@ using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 using TatBlog.WinApp;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TatBlog.WinApp
 {
@@ -19,7 +20,6 @@ namespace TatBlog.WinApp
         static async Task Main(string[] args)
         {
             //Test danh sách tác giả
-            //==================================================
             //var context = new BlogDbContext();
 
             //var seeder = new DataSeeder(context);
@@ -31,15 +31,19 @@ namespace TatBlog.WinApp
             //Console.WriteLine("{0,-4}{1,-30}{2,-30}{3,12}",
             //    "ID", "Full Name", "Email", "Joined Date");
 
-            //foreach (var author in authors) 
+            //foreach (var author in authors)
             //{
             //    Console.WriteLine("{0,-4}{1,-30}{2,-30}{3,12:MM/dd/yyyy}",
             //        author.Id, author.FullName, author.Email, author.JoinedDate);
             //}
+
+
+
             //==================================================
 
+
+
             //Hiển thị bài viết
-            //==================================================
             //var context = new BlogDbContext();
 
             //var posts = context.Posts
@@ -66,10 +70,15 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("Category  : {0}", post.Category);
             //    Console.WriteLine("".PadRight(80, '-'));
             //}
+
+
+
             //==================================================
 
+
+
+
             //Tìm 3 bài viết được xem nhiều nhất
-            //==================================================
             //var context = new BlogDbContext();
 
             //IBlogRepository blogRepo = new BlogRepository(context);
@@ -86,10 +95,14 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("Category  : {0}", post.Category);
             //    Console.WriteLine("".PadRight(80, '-'));
             //}
+
+
+
             //==================================================
 
+
+
             //Tìm 3 bài viết được xem nhiều nhất
-            //==================================================
             //var context = new BlogDbContext();
 
             //IBlogRepository blogRepo = new BlogRepository(context);
@@ -104,11 +117,14 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("{0,-5}{1,-50}{2,10}",
             //        item.Id, item.Name, item.PostCount);
             //}
+
+
+
             //==================================================
+
 
 
             //Phân trang
-            //==================================================
             //var context = new BlogDbContext();
 
             //IBlogRepository blogRepo = new BlogRepository(context);
@@ -131,17 +147,18 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("{0,-5}{1,-50}{2,10}",
             //        item.Id, item.Name, item.PostCount);
             //}
-            //==================================================
 
 
-            //Bài tập==========================================
-            Console.OutputEncoding = Encoding.Unicode;
-            var context = new BlogDbContext();
 
-            IBlogRepository blogRepo = new BlogRepository(context);
 
-            //1a) Tìm một thẻ (Tag) theo tên định danh (slug) 
-            //==================================================
+
+            //Bài_tập==========================================
+            //Console.OutputEncoding = Encoding.Unicode;
+            //var context = new BlogDbContext();
+
+            //IBlogRepository blogRepo = new BlogRepository(context);
+
+            //1A) Tìm một thẻ (Tag) theo tên định danh (slug) 
             //Console.Write("Nhập tên định danh của thẻ cần tìm: ");
             //string temp = Console.ReadLine().Trim();
             //var tags = context.Tags
@@ -174,10 +191,13 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("=> Không tìm thấy thẻ cần tìm!");
             //}
 
+
+
             //==================================================
 
-            //1c) Lấy danh sách tất cả các thẻ (Tag) kèm theo số bài viết chứa thẻ đó. Kết quả trả về kiểu IList<TagItem>
-            //==================================================
+
+
+            //1C) Lấy danh sách tất cả các thẻ (Tag) kèm theo số bài viết chứa thẻ đó. Kết quả trả về kiểu IList<TagItem>
             //Console.WriteLine("Lấy danh sách tất cả các thẻ (Tag) kèm theo số bài viết chứa thẻ đó:");
             //var tagList = await blogRepo.GetTagsListAsync();
             //var tags = context.Tags
@@ -209,10 +229,13 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("=> Không tìm thấy thẻ cần tìm!");
             //}
 
+
+
             //==================================================
 
-            //1d) Xóa một thẻ theo mã cho trước
-            //==================================================
+
+
+            //1D) Xóa một thẻ theo mã cho trước
             //Console.Write("Nhập mã của thẻ cần xóa: ");
             //int temp = Convert.ToInt32(Console.ReadLine());
             //var itemRemove = context.Tags.SingleOrDefault(x => x.Id == temp);
@@ -256,10 +279,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("=> Không tìm thấy thẻ cần tìm!");
             //}
+
+
+
             //==================================================
 
-            //1e) Tìm một chuyên mục (Category) theo tên định danh (slug) 
-            //==================================================
+
+
+
+            //1E) Tìm một chuyên mục (Category) theo tên định danh (slug) 
             //Console.Write("Nhập tên định danh của chuyên mục cần tìm: ");
             //string temp = Console.ReadLine().Trim();
             //var categories = context.Categories
@@ -293,10 +321,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("=> Không tìm thấy chuyên mục cần tìm!");
             //}
+
+
+
             //==================================================
 
-            //1f) Tìm một chuyên mục theo mã số cho trước. 
-            //==================================================
+
+
+
+            //1F) Tìm một chuyên mục theo mã số cho trước. 
             //Console.Write("Nhập mã số của chuyên mục cần tìm: ");
             //int temp = Convert.ToInt32(Console.ReadLine());
             //var categories = context.Categories
@@ -330,10 +363,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("=> Không tìm thấy chuyên mục cần tìm!");
             //}
+
+
+
             //==================================================
 
-            //1g) Thêm một chuyên mục
-            //==================================================
+
+
+
+            //1G) Thêm một chuyên mục
             //Console.WriteLine("Nhập thông tin chuyên mục cần thêm: ");
             ////Console.WriteLine("ID            : ");
             ////int tempId = Convert.ToInt32(Console.ReadLine());
@@ -370,10 +408,15 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("PostCount     : {0}", category.PostCount);
             //    Console.WriteLine("".PadRight(80, '-'));
             //}
+
+
+
             //==================================================
 
-            //1g) Cập nhật một chuyên mục
-            //==================================================
+
+
+
+            //1G.2) Cập nhật một chuyên mục
             //Console.Write("Nhập tên chuyên mục cần cập nhật: ");
             //var temp = Console.ReadLine().Trim();
 
@@ -425,10 +468,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("Không tìm thấy chuyên mục!");
             //}
+
+
+
             //==================================================
 
-            //1h) Xóa một chuyên mục theo mã số cho trước
-            //==================================================
+
+
+
+            //1H) Xóa một chuyên mục theo mã số cho trước
             //Console.Write("Nhập mã của chuyên mục cần xóa: ");
             //int temp = Convert.ToInt32(Console.ReadLine());
             //var itemRemove = context.Categories.SingleOrDefault(x => x.Id == temp);
@@ -465,10 +513,15 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("PostCount     : {0}", tag.PostCount);
             //    Console.WriteLine("".PadRight(80, '-'));
             //}
+
+
+
             //==================================================
 
-            //1i) Kiểm tra tên định danh (slug) của một chuyên mục đã tồn tại hay chưa
-            //==================================================
+
+
+
+            //1I) Kiểm tra tên định danh (slug) của một chuyên mục đã tồn tại hay chưa
             //Console.WriteLine("[Kiểm tra tên định danh (slug) của một chuyên mục đã tồn tại hay chưa]");
             //Console.Write("Nhập tên định danh chuyên mục: ");
             //var temp = Console.ReadLine().Trim();
@@ -481,10 +534,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("=> Tên định danh {0} chưa tồn tại!", temp);
             //}
+
+
+
             //==================================================
 
-            //j.Lấy và phân trang danh sách chuyên mục, kết quả trả về kiểu IPagedList<CategoryItem>.
-            //==================================================
+
+
+
+            //1J.Lấy và phân trang danh sách chuyên mục, kết quả trả về kiểu IPagedList<CategoryItem>.
             //var pagingParams = new PagingParams
             //{
             //    PageNumber = 1, //Số thứ tự của trang
@@ -503,11 +561,16 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("{0,-5}{1,-50}{2,10}",
             //        item.Id, item.Name, item.PostCount);
             //}
+
+
+
             //==================================================
 
-            //k.Đếm số lượng bài viết trong N tháng gần nhất. N là tham số đầu vào.
-            //Kết quả là một danh sách các đối tượng chứa các thông tin sau: Năm, Tháng, Số bài viết.
-            //==================================================
+
+
+
+            //1K.Đếm số lượng bài viết trong N tháng gần nhất. N là tham số đầu vào. Kết quả là một danh sách các đối tượng chứa các thông tin sau: Năm, Tháng, Số bài viết.
+
             //Console.WriteLine("Đếm số lượng bài viết trong N tháng gần nhất");
             //Console.Write("Nhập số tháng: ");
             //int temp = Convert.ToInt32(Console.ReadLine());
@@ -522,10 +585,15 @@ namespace TatBlog.WinApp
             //    Console.WriteLine("{0,-20}{1,-20}{2,10}",
             //        item.Year, item.Month, item.PostCount);
             //}
+
+
+
             //==================================================
 
-            //l.Tìm một bài viết theo mã số.
-            //==================================================
+
+
+
+            //1L.Tìm một bài viết theo mã số.
             //Console.Write("Nhập mã số của bài viết cần tìm: ");
             //int temp = Convert.ToInt32(Console.ReadLine().Trim());
             //var posts = context.Posts
@@ -561,10 +629,15 @@ namespace TatBlog.WinApp
             //{
             //    Console.WriteLine("=> Không tìm thấy bài viết cần tìm!");
             //}
+
+
+
             //==================================================
 
-            //m.Thêm một bài viết.
-            //==================================================
+
+
+
+            //1M.Thêm một bài viết.
             //Console.WriteLine("Nhập thông tin bài viết cần thêm: ");
             //Console.Write("Title                : ");
             //string tempTitle = Console.ReadLine().Trim();
@@ -582,84 +655,10 @@ namespace TatBlog.WinApp
             //string tempCategory = Console.ReadLine().Trim();
             //Console.Write("Tags                 : ");
             //string tempTags = Console.ReadLine().Trim();
+
+
+
             //==================================================
-
-            //n.Chuyển đổi trạng thái Published của bài viết. 
-            //==================================================
-            //Console.Write("Nhập mã số của bài viết cần thay đổi trạng thái Published: ");
-            //int temp = Convert.ToInt32(Console.ReadLine().Trim());
-            //var post = context.Set<Post>()
-            //    .Include(x => x.Author)
-            //    .Include(x => x.Category)
-            //    .FirstOrDefault(p => p.Id == temp);
-
-            //if (post != null)
-            //{
-            //    Console.WriteLine("=> Kết quả tìm thấy:");
-            //    Console.WriteLine("ID        : {0}", post.Id);
-            //    Console.WriteLine("Title     : {0}", post.Title);
-            //    Console.WriteLine("Date      : {0:MM/dd/yyyy}", post.PostedDate);
-            //    Console.WriteLine("Author    : {0}", post.Author.FullName);
-            //    Console.WriteLine("Category  : {0}", post.Category.Name);
-            //    Console.WriteLine("Published  : {0}", post.Published);
-            //    Console.WriteLine("".PadRight(80, '-'));
-
-            //    Console.WriteLine("=> Bạn có chắc chắn là muốn thay đổi trạng thái Published?");
-            //    Console.Write("=> ");
-
-            //    var answer = Console.ReadLine().Trim();
-            //    if (string.Equals(answer, "co", StringComparison.OrdinalIgnoreCase))
-            //    {
-            //        post.Published = !post.Published;
-            //        context.SaveChanges();
-            //        Console.WriteLine("=> Thông tin bài viết sau khi thay đổi:");
-            //        Console.WriteLine("ID        : {0}", post.Id);
-            //        Console.WriteLine("Title     : {0}", post.Title);
-            //        Console.WriteLine("Date      : {0:MM/dd/yyyy}", post.PostedDate);
-            //        Console.WriteLine("Author    : {0}", post.Author.FullName);
-            //        Console.WriteLine("Category  : {0}", post.Category.Name);
-            //        Console.WriteLine("Published  : {0}", post.Published);
-            //        Console.WriteLine("".PadRight(80, '-'));
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("=> Không tìm thấy bài viết cần tìm!");
-            //}
-            //==================================================
-
-            //o.Lấy ngẫu nhiên N bài viết. N là tham số đầu vào. 
-            //==================================================
-            //Console.WriteLine("Lấy ngẫu nhiên N bài viết");
-            //Console.Write("Nhập số bài viết: ");
-            //int temp = Convert.ToInt32(Console.ReadLine().Trim());
-
-            //var posts = context.Posts
-            //    .Where(p => p.Published)
-            //    .OrderBy(r => Guid.NewGuid())
-            //    .Select(p => new
-            //    {
-            //        Id = p.Id,
-            //        Title = p.Title,
-            //        ViewCount = p.ViewCount,
-            //        PostedDate = p.PostedDate,
-            //        Author = p.Author.FullName,
-            //        Category = p.Category.Name
-            //    })
-            //    .Take(temp)
-            //    .ToList();
-
-            //foreach (var post in posts)
-            //{
-            //    Console.WriteLine("ID        : {0}", post.Id);
-            //    Console.WriteLine("Title     : {0}", post.Title);
-            //    Console.WriteLine("View      : {0}", post.ViewCount);
-            //    Console.WriteLine("Date      : {0:MM/dd/yyyy}", post.PostedDate);
-            //    Console.WriteLine("Author    : {0}", post.Author);
-            //    Console.WriteLine("Category  : {0}", post.Category);
-            //    Console.WriteLine("".PadRight(80, '-'));
-            //}
-            ////==================================================
         }
     }
 }
