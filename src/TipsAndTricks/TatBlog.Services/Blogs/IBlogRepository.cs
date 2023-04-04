@@ -114,10 +114,10 @@ namespace TatBlog.Services.Blogs
         }
 
         //Lấy danh sách chuyên mục
-        public Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //Lấy danh sách bài viết theo truy vấn
         public Task<IList<Post>> GetPostsAsync(
@@ -162,5 +162,12 @@ namespace TatBlog.Services.Blogs
         {
             throw new NotImplementedException();
         }
+        Task<IPagedList<T>> GetPagedPostsAsync<T>(
+        PostQuery condition,
+        IPagingParams pagingParams,
+        Func<IQueryable<Post>, IQueryable<T>> mapper);
+
+
+
     }
 }

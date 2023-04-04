@@ -32,8 +32,8 @@ namespace TatBlog.Services.Blogs
             CancellationToken cancellationToken = default)
         {
             IQueryable<Post> postQuery = _context.Set<Post>()
-                .Include(x => x.Category)
-                .Include(x => x.Author);
+                .Include(x => x.Category);
+               // .Include(x => x.Author);
 
             if(year > 0)
             {
@@ -59,7 +59,7 @@ namespace TatBlog.Services.Blogs
             CancellationToken cancellationToken = default)
         {
             return await _context.Set<Post>()
-                .Include(x => x.Author)
+                //.Include(x => x.Author)
                 .Include(x => x.Category)
                 .OrderByDescending(p  => p.ViewCount)
                 .Take(numPosts)
@@ -89,26 +89,26 @@ namespace TatBlog.Services.Blogs
                 cancellationToken);
         }
 
-    
-        public async Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
-        {
-            return await _context.Set<Author>()
-                .OrderBy(a => a.FullName)
-                .Select(a => new AuthorItem()
-                {
-                    Id = a.Id,
-                    FullName = a.FullName,
-                    Email = a.ToString(),
-                    JoinedDate = a.JoinedDate,
-                    ImageUrl = a.ImageUrl,
-                    UrlSlug = a.UrlSlug,
-                    Notes = a.Notes,
-                    PostCount = a.Posts.Count(p => p.Published)
-                })
-                .ToListAsync(cancellationToken);
-        }
 
-       
+        //public async Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+        //{
+        //    return await _context.Set<Author>()
+        //        .OrderBy(a => a.FullName)
+        //        .Select(a => new AuthorItem()
+        //        {
+        //            Id = a.Id,
+        //            FullName = a.FullName,
+        //            Email = a.ToString(),
+        //            JoinedDate = a.JoinedDate,
+        //            ImageUrl = a.ImageUrl,
+        //            UrlSlug = a.UrlSlug,
+        //            Notes = a.Notes,
+        //            PostCount = a.Posts.Count(p => p.Published)
+        //        })
+        //        .ToListAsync(cancellationToken);
+        //}
+
+
         public async Task<IList<CategoryItem>> GetCategoriesAsync(
             bool showOnMenu = false,
             CancellationToken cancellationToken = default)
@@ -415,6 +415,16 @@ namespace TatBlog.Services.Blogs
             await _context.SaveChangesAsync(cancellationToken);
 
             return post;
+        }
+        public async Task<IPagedList<T>> GetPagedPostsAsync<T>(
+        PostQuery condition,
+        IPagingParams pagingParams,
+        Func<IQueryable<Post>, IQueryable<T>> mapper)
+        {
+            var posts = FilterPosts(condition);
+            var projectedPosts = mapper(posts);
+
+            return await projectedPosts.ToPagedListAsync(pagingParams);
         }
     }
 }
